@@ -3,8 +3,8 @@
 ## Contact me
 
 * Blog -> <https://cs1807cwy.github.io/blog/index>
-* Email -> <cyanny@qq.com>
-* GitHub -> [Cyanny@GitHub](https://github.com/cs1807cwy)
+* Email -> <cyannyinsia@qq.com>
+* GitHub -> [cs1807cwy@GitHub](https://github.com/cs1807cwy)
 
 
 创意作品小站：
