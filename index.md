@@ -3,10 +3,10 @@
 ## Contact me
 
 * Blog -> <https://cs1807cwy.github.io/blog/index>
-* Email -> <2432152552@qq.com>
+* Email -> <cyanny@qq.com>
 * GitHub -> [Cyanny@GitHub](https://github.com/cs1807cwy)
 
 
-最近文章：
+创意作品小站：
 
-[LLM Application系列](https://cugtyt.github.io/blog/llm-application/index)
+[Notion Index](https://luxuriant-caption-d5b.notion.site/99745d95b97044a4b1d0731a3bbaf61a?pvs=4)
