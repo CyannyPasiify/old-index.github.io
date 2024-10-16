@@ -1,3 +1,8 @@
+---
+title: 欢迎，Cyanny的中文主页
+description: 无内容
+---
+
 # 欢迎，Cyanny的中文主页
 
 ## 联系方式
