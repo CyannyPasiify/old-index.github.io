@@ -3,7 +3,7 @@
 ## Contact me
 
 * Blog -> <https://cs1807cwy.github.io/blog/index>
-* Email -> <Cyannypasiify@qq.com>
+* Email -> <cyannypasiify@qq.com>
 * GitHub -> [cs1807cwy@GitHub](https://github.com/cs1807cwy)
 
 
