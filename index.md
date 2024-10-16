@@ -1,14 +1,17 @@
-# Welcome to home of Cyanny
+# 欢迎，Cyanny的主页
 
-## Contact me
+## 联系方式
 
-* Blog -> <https://cs1807cwy.github.io/blog/index>
+* 博客 -> <https://cs1807cwy.github.io>
 * Email -> <CyannyPasiify@qq.com>
 * GitHub -> [cs1807cwy@GitHub](https://github.com/cs1807cwy)
 
+## 导航
 
-创意作品小站：
+[研究]: https://cs1807cwy.github.io/research/index
 
-[Notion Index](https://luxuriant-caption-d5b.notion.site/99745d95b97044a4b1d0731a3bbaf61a?pvs=4)
+[研究](https://cs1807cwy.github.io/research/index)
 
-[TEST POSTS](https://cs1807cwy.github.io/posts/index)
+## 外部链接
+
+[Notion主页](https://luxuriant-caption-d5b.notion.site/99745d95b97044a4b1d0731a3bbaf61a?pvs=4)
