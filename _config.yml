@@ -1,1 +1,3 @@
-jekyll-theme-cayman
+theme: jekyll-theme-cayman
+name: Cyanny
+markdown: kramdown
