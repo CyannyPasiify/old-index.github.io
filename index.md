@@ -1,6 +1,6 @@
 ---
 title: 欢迎，Cyanny的中文主页
-description: 
+description: /s
 ---
 
 # 欢迎，Cyanny的中文主页
