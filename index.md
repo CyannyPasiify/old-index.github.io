@@ -1,6 +1,6 @@
 ---
 title: 欢迎，Cyanny的中文主页
-description: 无内容
+description: 
 ---
 
 # 欢迎，Cyanny的中文主页
@@ -13,7 +13,7 @@ description: 无内容
 
 ## 导航
 
-[研究](https://cs1807cwy.github.io/research/index)
+[研究](research/index)
 
 ## 外部链接
 
