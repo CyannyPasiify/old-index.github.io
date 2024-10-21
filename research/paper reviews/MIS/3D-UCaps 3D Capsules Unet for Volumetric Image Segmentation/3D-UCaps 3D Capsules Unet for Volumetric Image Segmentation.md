@@ -1,5 +1,5 @@
 ---
-title: [review] 3D-UCaps: 3D Capsules Unet for Volumetric Image Segmentation
+title: "[review] 3D-UCaps: 3D Capsules Unet for Volumetric Image Segmentation"
 description: capsule in enconder layers
 ---
 

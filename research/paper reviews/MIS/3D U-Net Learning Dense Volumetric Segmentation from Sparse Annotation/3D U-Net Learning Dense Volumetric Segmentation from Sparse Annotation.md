@@ -1,5 +1,5 @@
 ---
-title: [review] 3D U-Net: Learning Dense Volumetric Segmentation from Sparse Annotation
+title: "[review] 3D U-Net: Learning Dense Volumetric Segmentation from Sparse Annotation"
 description: 3D U-Net, the milestone
 ---
 

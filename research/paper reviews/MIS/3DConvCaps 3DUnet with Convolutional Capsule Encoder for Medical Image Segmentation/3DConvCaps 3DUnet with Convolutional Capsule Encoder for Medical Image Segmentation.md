@@ -1,5 +1,5 @@
 ---
-title: [review] 3DConvCaps: 3DUnet with Convolutional Capsule Encoder for Medical Image Segmentation
+title: "[review] 3DConvCaps: 3DUnet with Convolutional Capsule Encoder for Medical Image Segmentation"
 description: capsule in deep enconder layers
 ---
 
