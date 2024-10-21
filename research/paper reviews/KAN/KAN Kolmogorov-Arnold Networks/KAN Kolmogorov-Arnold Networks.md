@@ -2,6 +2,7 @@
 description: A new parameterization of neurons
 ---
 
+<head>
 <!--KaTeX-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
@@ -13,6 +14,8 @@ description: A new parameterization of neurons
           });
       });
   </script>
+</head>
+
 
 # [Review] KAN: Kolmogorov–Arnold Networks
 
@@ -31,9 +34,11 @@ Liu Z, Wang Y, Vaidya S, et al. Kan: Kolmogorov-arnold networks[J]. arXiv prepri
 论文主要的理论依据在于Kolmogorov-Arnold定理。这个定理是由苏联数学家安德烈·科尔莫戈洛夫（Andrey Kolmogorov）首先提出，并由他的学生弗拉基米尔·阿诺尔德（Vladimir Arnold）在1957年进一步发展。定理最初的动机是探讨**多元函数可以如何被一组更简单的函数表示**。
 
 Kolmogorov-Arnold定理指的是，对于任何定义在闭区间上的连续函数$$ f\left(x_1, ..., x_n\right) $$ ，存在一系列的一维连续函数，使得该多变量函数可以表示为：
+
 $$
 f\left(x_1, ..., x_n\right)=\sum_{q=1}^{2n+1}\Phi_q\left(\sum_{p=1}^{n}\phi_{q,p}\left(x_p\right)\right)
 $$
+
 其中，
 
 l $$ \phi_{q,p}$$是将单个变量映射到实数的一维连续函数。
@@ -51,8 +56,6 @@ MLP的理论依据是**通用近似定理（Universal Approximation Theorem，UA
 这个定理解释了为什么神经网络可以被应用于各种复杂的模式识别和非线性回归任务，但在实际应用中，如何设计网络结构、选择合适的激活函数和训练算法以达到所需的逼近精度仍然是重要的研究和工程问题。此外，UAT定理并没有涉及网络训练的收敛速度或是所需的训练数据量，因此它也有着它的局限性。
 
 ![Compare MLP KAN](Assets/Compare%20MLP%20KAN.png)
-
-
 
 上图是论文中对MLP和KAN的对比。与MLP类似，KAN实际上也具有全连接结构，区别在于，MLP在节点（神经元）上放置固定的激活函数，而KAN在边缘（权重）上放置可学习的激活函数。因此，Kolmogorov-Arnold网络完全没有线性权重矩阵：**每个权重参数都由一种可学习的一维样条函数替代**。Kolmogorov-Arnold网络的节点仅对输入信号进行求和，不进行任何非线性处理，因此在节点只需要简单的加法。而且KAN通常允许比MLP更小的计算图，论文中以PDE求解为例进行了说明：1个2层宽度为10的KAN比一个4层宽度为100的MLP精度高100倍且参数效率高100倍。
 
@@ -83,9 +86,11 @@ KAN内部使用样条函数来建模数据，外部则利用类似MLP的结构�
 组合函数在网络高层使用，它们将一维函数的输出进行组合和加工。这些函数也可以通过一维样条或其他形式进行参数化，使得输出不仅仅是简单的线性组合，而是能够捕捉输入间复杂的交互效应。
 
 KAN层的公式表达为
+
 $$
 x_{l+1,j}=\sum_{i=1}^{n_l}x_{l,i,j}=\sum_{i=1}^{n_l}{\phi_{j,i}\left(x_{l,i}\right)},j=1,...,n_{l+1}
 $$
+
 它描述了如何在第l层和第l+1层之间进行计算，即下一层的每个节点的激活值是当前层所有节点输出通过相应的一维函数处理后的总和。
 
 论文提出了3个优化技巧：
