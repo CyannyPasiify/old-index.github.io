@@ -1,9 +1,9 @@
 ---
-title: "[review] 3DConvCaps: 3DUnet with Convolutional Capsule Encoder for Medical Image Segmentation"
+title: "[Review] 3DConvCaps: 3DUnet with Convolutional Capsule Encoder for Medical Image Segmentation"
 description: capsule in deep enconder layers
 ---
 
-# [review] 3DConvCaps: 3DUnet with Convolutional Capsule Encoder for Medical Image Segmentation
+# [Review] 3DConvCaps: 3DUnet with Convolutional Capsule Encoder for Medical Image Segmentation
 
 本文提出了一种基于3D体素的胶囊网络3DConvCaps，应用于3D医学图像分割任务中。
 

@@ -1,9 +1,9 @@
 ---
-title: "[review] 3D-UCaps: 3D Capsules Unet for Volumetric Image Segmentation"
+title: "[Review] 3D-UCaps: 3D Capsules Unet for Volumetric Image Segmentation"
 description: capsule in enconder layers
 ---
 
-# [review] 3D-UCaps: 3D Capsules Unet for Volumetric Image Segmentation
+# [Review] 3D-UCaps: 3D Capsules Unet for Volumetric Image Segmentation
 
 本文提出了一种基于3D体素的胶囊网络3D-UCaps，应用于3D医学图像分割任务中。
 
