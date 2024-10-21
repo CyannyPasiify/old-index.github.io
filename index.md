@@ -1,15 +1,15 @@
 ---
-title: 欢迎，Cyanny的中文主页
-description: <None>
+title: Home of Cyanny Chen
+description: Welcome!
 ---
 
-# 欢迎，Cyanny的中文主页
+# Welcome
 
 ## 联系方式
 
-* 博客 -> <https://cs1807cwy.github.io>
+* Personal Index -> <https://cs1807cwy.github.io>
 * Email -> <CyannyPasiify@qq.com>
-* GitHub -> [cs1807cwy@GitHub](https://github.com/cs1807cwy)
+* Github -> [cs1807cwy@Github](https://github.com/cs1807cwy)
 
 ## 导航
 

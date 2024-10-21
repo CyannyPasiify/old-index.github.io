@@ -1,4 +1,10 @@
-# [Review] Dataset Distillation by Matching Training Trajectories
+---
+description: 3D U-Net, the milestone
+---
+
+# [review] 3D U-Net: Learning Dense Volumetric Segmentation from Sparse Annotation
+
+本文提出了一种从稀疏标注的立体数据中学习三维分割的网络。
 
 ## 收录
 
@@ -6,16 +12,21 @@ MICCAI 2016
 
 Çiçek Ö, Abdulkadir A, Lienkamp S S, et al. 3D U-Net: learning dense volumetric segmentation from sparse annotation[C]//Medical Image Computing and Computer-Assisted Intervention–MICCAI 2016: 19th International Conference, Athens, Greece, October 17-21, 2016, Proceedings, Part II 19. Springer International Publishing, 2016: 424-432.
 
-## 摘要
+https://link.springer.com/chapter/10.1007/978-3-319-46723-8_49
 
-本文提出了一种从稀疏标注的立体数据中学习三维分割的网络。
+## 要点
+
+- 提出3D U-Net：从稀疏标注的体素图像中学习的立体分割网络。
+- 2种应用
+  -  Semi-Automated Segmentation：可以对只进行了稀疏标注的数据集进行密集标注，细化标注的结果。
+  -  Fully-Automated Segmentation：对未标注的数据进行预测，生成密集分割结果。
 
 
-## 研究内容
+## 研究理由
 
 以往slice-by-slice的标注方式是冗余并且低效的，因为相邻切片显示的信息几乎相同，而且逐切片学习出来的2D模型预测效果很差，没有考虑到空间上的互信息。本文提出一种从一部分2D切片标注生成3D密集分割结果的思路，并给出了两种应用方法。
 
-## 思想方法
+## 主要内容
 
 ### 架构
 
@@ -48,3 +59,4 @@ MICCAI 2016
 ### 为什么3D-UNet要避免瓶颈，而残差网络等要鼓励使用瓶颈？
 
 因为ResNet的bottleneck是指使用1x1卷积，主要是为了通过降通道数量，来降卷积的参数和计算量，这中间会有信息损失，但影响不大，因为毕竟是负责残差的计算；但是在分割任务中利用池化层获取来多尺度信息，池化操作本身就会损失许多信息，所以反而要在最大池化之前将通道数翻倍，来避免瓶颈。
+
