@@ -2,16 +2,17 @@
 description: A new parameterization of neurons
 ---
 
-<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        tex2jax: {
-            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
-            inlineMath: [["$\","$"]],
-            displayMath: [["$$","$$"]]
-        }
-    });
-</script>
+<!--KaTeX-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"></script>
+  <script>
+      document.addEventListener("DOMContentLoaded", function() {
+          renderMathInElement(document.body, {
+              // ...options...
+          });
+      });
+  </script>
 
 # [Review] KAN: Kolmogorov–Arnold Networks
 
@@ -29,15 +30,15 @@ Liu Z, Wang Y, Vaidya S, et al. Kan: Kolmogorov-arnold networks[J]. arXiv prepri
 
 论文主要的理论依据在于Kolmogorov-Arnold定理。这个定理是由苏联数学家安德烈·科尔莫戈洛夫（Andrey Kolmogorov）首先提出，并由他的学生弗拉基米尔·阿诺尔德（Vladimir Arnold）在1957年进一步发展。定理最初的动机是探讨**多元函数可以如何被一组更简单的函数表示**。
 
-Kolmogorov-Arnold定理指的是，对于任何定义在闭区间上的连续函数$\ f\left(x_1, ..., x_n\right) $ ，存在一系列的一维连续函数，使得该多变量函数可以表示为：
+Kolmogorov-Arnold定理指的是，对于任何定义在闭区间上的连续函数$$ f\left(x_1, ..., x_n\right) $$ ，存在一系列的一维连续函数，使得该多变量函数可以表示为：
 $$
 f\left(x_1, ..., x_n\right)=\sum_{q=1}^{2n+1}\Phi_q\left(\sum_{p=1}^{n}\phi_{q,p}\left(x_p\right)\right)
 $$
 其中，
 
-l $\ \phi_{q,p}$是将单个变量映射到实数的一维连续函数。
+l $$ \phi_{q,p}$$是将单个变量映射到实数的一维连续函数。
 
-l $\ \Phi_q$是将实数映射到实数的一维连续函数，它处理由$\ \phi_{q,p}$映射后的和。
+l $$ \Phi_q$$是将实数映射到实数的一维连续函数，它处理由$$ \phi_{q,p}$$映射后的和。
 
 这个定理表明**多维函数可以通过一系列的一维函数和简单的加法来构建**。这种结构**简化了多维函数的复杂性**，因为一维函数相对来说更易于处理和学习。从机器学习和神经网络的角度看，这提供了一种潜在的网络架构设计思路，即通过学习一系列的一维函数来近似复杂的多维函数。Kolmogorov-Arnold定理提供的公式形式可以视作一个2层网络，它们分别有n、2n+1维输入和2n+1、1维输出。论文给出了这个2层网络向任意层网络的推广，即KAN。
 
@@ -45,7 +46,7 @@ l $\ \Phi_q$是将实数映射到实数的一维连续函数，它处理由$\ \p
 
 MLP是当前最主流的深度神经网络（DNN）形式。它由多个层组成，每层都包含多个神经元，这些神经元通过**激活函数**进行非线性变换。
 
-MLP的理论依据是**通用近似定理（Universal Approximation Theorem，UAT）**，它确立了MLP的优化范式，即足够层数的MLP能够无限近似任意目标函数。定理的主要内容是**对于任何在闭区间上定义的连续函数和任意的误差**$\ \epsilon$**，都存在一个具有至少一个隐藏层的前馈神经网络，可以找到一组权重和偏置，使得该神经网络的输出函数在整个定义域内与目标函数的最大偏差小于**$\ \epsilon$**。**
+MLP的理论依据是**通用近似定理（Universal Approximation Theorem，UAT）**，它确立了MLP的优化范式，即足够层数的MLP能够无限近似任意目标函数。定理的主要内容是**对于任何在闭区间上定义的连续函数和任意的误差$$ \epsilon$$，都存在一个具有至少一个隐藏层的前馈神经网络，可以找到一组权重和偏置，使得该神经网络的输出函数在整个定义域内与目标函数的最大偏差小于$$ \epsilon$$**。
 
 这个定理解释了为什么神经网络可以被应用于各种复杂的模式识别和非线性回归任务，但在实际应用中，如何设计网络结构、选择合适的激活函数和训练算法以达到所需的逼近精度仍然是重要的研究和工程问题。此外，UAT定理并没有涉及网络训练的收敛速度或是所需的训练数据量，因此它也有着它的局限性。
 
@@ -77,7 +78,7 @@ KAN内部使用样条函数来建模数据，外部则利用类似MLP的结构�
 
 ## KAN架构
 
-在KAN中，每个连接不再是简单的权重，而是一个可学习的一维函数。这些函数通常通过样条或其他平滑函数进行参数化，使得网络可以学习在每个维度上最适合数据的非线性变换。每个输入变量$\ x_i$通过一组独立的一维函数$\ \phi_{p,q}\left(x_i\right)$处理，其中p表示输入变量的索引，q表示输出维度的索引。
+在KAN中，每个连接不再是简单的权重，而是一个可学习的一维函数。这些函数通常通过样条或其他平滑函数进行参数化，使得网络可以学习在每个维度上最适合数据的非线性变换。每个输入变量$$ x_i$$通过一组独立的一维函数$$ \phi_{p,q}\left(x_i\right)$$处理，其中p表示输入变量的索引，q表示输出维度的索引。
 
 组合函数在网络高层使用，它们将一维函数的输出进行组合和加工。这些函数也可以通过一维样条或其他形式进行参数化，使得输出不仅仅是简单的线性组合，而是能够捕捉输入间复杂的交互效应。
 
@@ -89,9 +90,9 @@ $$
 
 论文提出了3个优化技巧：
 
-**1. 残差激活函数**：每个激活函数$\ \phi(x)$被设计为残差形式，即包括一个固定基函数$\ b(x)$和一个带有可学习参数的B样条函数。$\ b(x)$通常选择为SiLU函数，提供了非线性的基本变换，而B样条部分允许进一步的细粒度调整。这种组合提高了模型对非线性关系的适应性和表达力。
+**1. 残差激活函数**：每个激活函数$$ \phi(x)$$被设计为残差形式，即包括一个固定基函数$$ b(x)$$和一个带有可学习参数的B样条函数。$$ b(x)$$通常选择为SiLU函数，提供了非线性的基本变换，而B样条部分允许进一步的细粒度调整。这种组合提高了模型对非线性关系的适应性和表达力。
 
-**2. 激活函数的尺度初始化**：为了确保网络在初始化阶段具有合理的行为，激活函数的部分，特别是B样条部分，通常初始化为接近零的小值，而权重$\ w$使用Xavier初始化。这种初始化方法帮助避免训练初期的梯度爆炸或消失问题，促进了更稳定的学习过程。
+**2. 激活函数的尺度初始化**：为了确保网络在初始化阶段具有合理的行为，激活函数的部分，特别是B样条部分，通常初始化为接近零的小值，而权重$$ w$$使用Xavier初始化。这种初始化方法帮助避免训练初期的梯度爆炸或消失问题，促进了更稳定的学习过程。
 
 **3. 动态更新样条网格**：由于B样条是定义在有限区间的，但激活值可能在训练过程中超出这些区间，因此提出了动态更新网格的方法。这意味着根据激活函数输入的实际分布，调整定义样条函数的网格点，确保模型能够适应输入数据的变化，维持优化性能。
 
