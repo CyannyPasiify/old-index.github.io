@@ -12,13 +12,13 @@ arXiv preprint
 
 Liu Z, Wang Y, Vaidya S, et al. Kan: Kolmogorov-arnold networks[J]. arXiv preprint arXiv:2404.19756, 2024.
 
-https://doi.org/10.48550/arXiv.2404.19756
+[source](https://doi.org/10.48550/arXiv.2404.19756)
 
 ## Kolmogorov-Arnold定理
 
 论文主要的理论依据在于Kolmogorov-Arnold定理。这个定理是由苏联数学家安德烈·科尔莫戈洛夫（Andrey Kolmogorov）首先提出，并由他的学生弗拉基米尔·阿诺尔德（Vladimir Arnold）在1957年进一步发展。定理最初的动机是探讨**多元函数可以如何被一组更简单的函数表示**。
 
-Kolmogorov-Arnold定理指的是，对于任何定义在闭区间上的连续函数$\ f\left(x_1, ..., x_n\right) $ ，存在一系列的一维连续函数，使得该多变量函数可以表示为：
+Kolmogorov-Arnold定理指的是，对于任何定义在闭区间上的连续函数$ f\left(x_1, ..., x_n\right) $ ，存在一系列的一维连续函数，使得该多变量函数可以表示为：
 $$
 f\left(x_1, ..., x_n\right)=\sum_{q=1}^{2n+1}\Phi_q\left(\sum_{p=1}^{n}\phi_{q,p}\left(x_p\right)\right)
 $$

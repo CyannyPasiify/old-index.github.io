@@ -7,7 +7,7 @@ description: I'm struggling ...
 
 ## KAN（Kolmogorov-Arnold Networks）
 
-[KAN: Kolmogorov-Arnold Networks](https://cs1807cwy.github.io/research/paper-reviews/KAN%20Kolmogorov-Arnold%20Networks/KAN%20Kolmogorov-Arnold%20Networks)
+[KAN: Kolmogorov-Arnold Networks](https://cs1807cwy.github.io/research/paper%20reviews/KAN/KAN%20Kolmogorov-Arnold%20Networks/KAN%20Kolmogorov-Arnold%20Networks)
 
 ## MIS（Medical Image Segmentation）
 

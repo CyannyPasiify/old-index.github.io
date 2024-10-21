@@ -12,7 +12,7 @@ MICCAI 2016
 
 Çiçek Ö, Abdulkadir A, Lienkamp S S, et al. 3D U-Net: learning dense volumetric segmentation from sparse annotation[C]//Medical Image Computing and Computer-Assisted Intervention–MICCAI 2016: 19th International Conference, Athens, Greece, October 17-21, 2016, Proceedings, Part II 19. Springer International Publishing, 2016: 424-432.
 
-https://link.springer.com/chapter/10.1007/978-3-319-46723-8_49
+[source](https://link.springer.com/chapter/10.1007/978-3-319-46723-8_49)
 
 ## 要点
 
