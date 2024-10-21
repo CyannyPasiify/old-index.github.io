@@ -1,4 +1,5 @@
 ---
+title: [Review] KAN: Kolmogorov–Arnold Networks
 description: A new parameterization of neurons
 ---
 
@@ -15,8 +16,6 @@ description: A new parameterization of neurons
       });
   </script>
 </head>
-
-
 # [Review] KAN: Kolmogorov–Arnold Networks
 
 一个全新的神经元参数化方案，基于Kolmogorov–Arnold定理的B样条非线性参数化。
