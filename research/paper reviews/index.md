@@ -5,6 +5,10 @@ description: I'm struggling ...
 
 # 论文评论
 
+## Convolution
+
+[Gabor Convolutional Networks](https://cs1807cwy.github.io/research/paper%20reviews/Convolution/Gabor%20Convolutional%20Networks/Gabor%20Convolutional%20Networks)
+
 ## KAN（Kolmogorov-Arnold Networks）
 
 [KAN: Kolmogorov-Arnold Networks](https://cs1807cwy.github.io/research/paper%20reviews/KAN/KAN%20Kolmogorov-Arnold%20Networks/KAN%20Kolmogorov-Arnold%20Networks)
