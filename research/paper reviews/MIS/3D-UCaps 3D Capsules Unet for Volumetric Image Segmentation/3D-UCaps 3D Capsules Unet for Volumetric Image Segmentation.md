@@ -3,7 +3,7 @@ title: "[Review] 3D-UCaps: 3D Capsules Unet for Volumetric Image Segmentation"
 description: capsule in enconder layers
 ---
 
-### [Back](https://cs1807cwy.github.io/research/paper%20reviews)
+# [🔙](https://cs1807cwy.github.io/research/paper%20reviews)
 
 # [Review] 3D-UCaps: 3D Capsules Unet for Volumetric Image Segmentation
 
