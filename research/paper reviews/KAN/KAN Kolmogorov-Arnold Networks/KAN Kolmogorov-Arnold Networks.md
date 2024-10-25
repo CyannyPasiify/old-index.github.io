@@ -15,6 +15,7 @@ description: A new parameterization of neurons
           });
       });
   </script>
+### [Back](https://cs1807cwy.github.io/research/paper%20reviews)
 
 # [Review] KAN: Kolmogorov–Arnold Networks
 

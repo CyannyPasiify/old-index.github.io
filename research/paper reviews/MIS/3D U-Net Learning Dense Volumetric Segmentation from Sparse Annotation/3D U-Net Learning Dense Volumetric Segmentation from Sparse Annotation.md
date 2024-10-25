@@ -3,6 +3,8 @@ title: "[Review] 3D U-Net: Learning Dense Volumetric Segmentation from Sparse An
 description: 3D U-Net, the milestone
 ---
 
+### [Back](https://cs1807cwy.github.io/research/paper%20reviews)
+
 # [Review] 3D U-Net: Learning Dense Volumetric Segmentation from Sparse Annotation
 
 本文提出了一种从稀疏标注的立体数据中学习三维分割的网络。

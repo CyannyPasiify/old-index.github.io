@@ -15,6 +15,7 @@ description: "A scale rotation robust conv variance (GoF)"
           });
       });
   </script>
+### [Back](https://cs1807cwy.github.io/research/paper%20reviews)
 
 # [Review] Gabor Convolutional Networks
 
