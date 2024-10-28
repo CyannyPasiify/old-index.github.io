@@ -70,7 +70,7 @@ Gabor Filters + CNN杂交。一些方法使用Gabor滤波器提取手工特征�
 GoF的可学习参数仅限于其内含的卷积核参数$$C_{i,o}$$，它通过多方向尺度的Gabor调制生成GoF，所以实际可学习参数更少。梯度计算只需在每个通道内将各方向GoF子滤波器的梯度按Gabor滤波器权重加和。
 
 $$
-\delta=\frac{\partial L}{\partial C_{i,o}} = \sum_{u=1}^{U}{\frac{\partial L}{\partial C_{i,o}}\circ G\left(u,v\right)}
+\delta=\frac{\partial L}{\partial C_{i,o}} = \sum_{u=1}^{U}{\frac{\partial L}{\partial C_{i,u}}\circ G\left(u,v\right)}
 $$
 
 $$
