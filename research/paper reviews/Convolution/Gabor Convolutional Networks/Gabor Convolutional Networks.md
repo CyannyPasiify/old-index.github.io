@@ -19,7 +19,7 @@ description: "A scale rotation robust conv variance (GoF)"
 
 # [Review] Gabor Convolutional Networks
 
-本文结合Gabor导向滤波器思想将其与DCNN结合，构建了Conv算子与Gabor滤波器结合的Gabor卷积方向滤波器（Convolutional Gabor Orientation Filter，GoF）参数化算子，GoF能够增强模型对方向和尺度的健壮性。与早期工作只在浅层使用不可学习的Gabor滤波器提取手工特征不同，本文首创在模型参数级别将Gabor滤波器与Conv算子耦合的方案。以GoF构建Gabor Convolutional Networks（GCN）模型，在ResNet基座中替换Conv算子后，在许多任务上展现出优于标准DCNN的性能。
+本文将Gabor导向滤波器思想与DCNN结合，构建了Conv算子与Gabor滤波器结合的Gabor卷积方向滤波器（Convolutional Gabor Orientation Filter，GoF）参数化算子，GoF能够增强模型对方向和尺度的健壮性。与早期工作只在浅层使用不可学习的Gabor滤波器提取手工特征不同，本文首创在模型参数级别将Gabor滤波器与Conv算子耦合的方案。以GoF构建Gabor Convolutional Networks（GCN）模型，在ResNet基座中替换Conv算子后，在许多任务上展现出优于标准DCNN的性能。
 
 **提出了**一种基于标准Conv算子并根据Gabor导向滤波器思想改进的GoF算子，此算子能够对多个方向和多个尺度信息进行建模，将此算子嵌入DCNN或替换Conv算子即可显著增强模型对方向和尺度的健壮性，进一步提升模型在某些对空间变换建模有较高需求的任务上的性能，例如大目标检测和基于多方向纹理的匹配或分类。
 
