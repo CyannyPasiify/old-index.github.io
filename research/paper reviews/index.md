@@ -11,6 +11,8 @@ description: I'm struggling ...
 
 [Gabor Convolutional Networks](https://cs1807cwy.github.io/research/paper%20reviews/Convolution/Gabor%20Convolutional%20Networks/Gabor%20Convolutional%20Networks)
 
+[An intriguing failing of convolutional neural networks and the CoordConv solution](https://cs1807cwy.github.io/research/paper%20reviews/Convolution/An%20intriguing%20failing%20of%20convolutional%20neural%20networks%20and%20the%20CoordConv%20solution/An%20intriguing%20failing%20of%20convolutional%20neural%20networks%20and%20the%20CoordConv%20solution)
+
 ## KAN（Kolmogorov-Arnold Networks）
 
 [KAN: Kolmogorov-Arnold Networks](https://cs1807cwy.github.io/research/paper%20reviews/KAN/KAN%20Kolmogorov-Arnold%20Networks/KAN%20Kolmogorov-Arnold%20Networks)
