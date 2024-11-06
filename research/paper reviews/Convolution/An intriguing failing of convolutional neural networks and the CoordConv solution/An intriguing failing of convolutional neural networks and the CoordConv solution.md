@@ -1,8 +1,9 @@
 ---
 title: [Review] An intriguing failing of convolutional neural networks and the CoordConv solution
-description: CoordConv which means Conv with coordinates info cat in channel
+description: "CoordConv which means Conv with coordinates info cat in channel"
 ---
 
+# [🔙](https://cs1807cwy.github.io/research/paper%20reviews)
 
 # [Review] An intriguing failing of convolutional neural networks and the CoordConv solution
 
