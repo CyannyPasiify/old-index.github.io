@@ -1,5 +1,5 @@
 ---
-title: [Review] An intriguing failing of convolutional neural networks and the CoordConv solution
+title: "[Review] An intriguing failing of convolutional neural networks and the CoordConv solution"
 description: "CoordConv which means Conv with coordinates info cat in channel"
 ---
 
